@@ -1,21 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="api.css">
-    <title>API Assignment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Website</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <h2 id="title"></h2><h2 id="title2">What kind of jacket should I wear in Toronto?</h2>
-        <div id="wrap">
-        </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand" href="#">Yeonu Inc.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lineup">Linup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#price">Price</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script type="text/javascript" src="api.js"></script>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1>REAL DEATH METAL</h1>
+      <p>2024 SUMMER</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        To sell your soul
+      </button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notice!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Ticket Release: June 6th, 6:00 PM
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+
+  <section class="gallery-section py-5" id="lineup">
+    <div class="container">
+      <h1>Linup</h1>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Asmodeus.jpg" class="gallery-img">
+          <h5 class="card-title">Asmodeus</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://i.pinimg.com/564x/06/97/cc/0697cc429c1d30efd93bed1a8160356f.jpg" class="gallery-img">
+          <h5 class="card-title">Satan</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Lucifer3.jpg" class="gallery-img">
+          <h5 class="card-title">Lucifer</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="https://www.aetolia.com/wp-content/uploads/2019/06/leviathan-1-640x1024.jpg" class="gallery-img">
+          <h5 class="card-title">Leviathan</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://arthive.net/res/media/img/oy1200/work/004/357089@2x.webp" class="gallery-img">
+          <h5 class="card-title">Mephistopheles</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Belphegor.jpg" class="gallery-img">
+          <h5 class="card-title">Belphegor</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Section -->
+  <div class="container-fluid" id="location">
+    <div class="row">
+      <div class="col-md-5 mx-auto mb-2">
+        <h1>Location</h1>
+        <div class="card text-center">
+          <img class="card-img-top" src="https://www.timeforkids.com/wp-content/uploads/2018/08/Hero-Volcano.jpg?w=1024"
+            alt="Card image cap">
+          <div class="card-body">
+            <hr>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441120.392326454!2d167.1523105428734!3d-77.52929121076578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaf70c9810b55b623%3A0xeea3d4eb75328327!2sMt%20Erebus!5e0!3m2!1sen!2sca!4v1711488526861!5m2!1sen!2sca"
+              width="100%" height="200" allowfullscreen=""></iframe>
+            <a
+              href="https://www.google.com/maps/place/Mt+Erebus/@-77.5292912,167.1523105,8z/data=!4m6!3m5!1s0xaf70c9810b55b623:0xeea3d4eb75328327!8m2!3d-77.5292912!4d167.1523105!16zL20vMDE1ZnBi?authuser=0&entry=ttu">
+              <address class="font-italic">Mt Erebus</address>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 mx-auto mb-2" id="price">
+        <h1>Price</h1>
+        <p>
+          🔥 Get Fired Up for Festival Fun! 🔥 <br><br>
+
+          Ticket Prices: <br>
+
+          🎟️ Early Bird: $66.66<br>
+          🎟️ General Admission: $99.99<br>
+          🎟️ Devil Pass: $77.77<br><br>
+
+          Are you ready to unleash your inner metal warrior at Real Death Metal 2024? Get ready to experience the
+          heaviest beats, the most intense mosh pits, and the electrifying energy of the metal community coming
+          together! <br><br>
+
+          General Admission grants you access to all stages, where you'll witness mind-blowing performances by the
+          fiercest bands in the metal scene. But for the ultimate experience, upgrade to the Devil Pass! With Devil
+          access, you'll enjoy perks like exclusive viewing areas, priority entry, and meet-and-greets with your
+          favorite devils.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer Section -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2024 Yeonwoo Hong. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
